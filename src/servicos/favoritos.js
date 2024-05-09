@@ -8,6 +8,16 @@ async function getFavoritos() {
     return response.data
 }
 
+async function postFavorito(id) {
+    await favoritosAPI.post(`/${id}`)
+
+}
+
+async function dFavorito(id) {
+    await favoritosAPI.post(`/${id}`)
+
+}
+
 export {
     getFavoritos
 }
